@@ -4,7 +4,7 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-	response.send(Buffer.String(fs.readfile(index.html)));
+	response.send(Buffer.String(fs.readfile(./index.html)));
 // response.send('Hello World 2!');
 });
 
